@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Profile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: #f4f8fb;
+            margin: 0;
+            padding: 0;
+        }
+        .profile-container {
+            max-width: 450px;
+            margin: 50px auto;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 18px rgba(0,0,0,0.07);
+            padding: 2em;
+            text-align: center;
+        }
+        .profile-pic {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #0078d4;
+            margin-bottom: 1em;
+        }
+        h1 {
+            margin: 0.4em 0 0.2em 0;
+            font-size: 2rem;
+            color: #222;
+        }
+        .username {
+            color: #0078d4;
+            font-size: 1.1rem;
+            margin-bottom: 1em;
+        }
+        .bio {
+            font-size: 1.07rem;
+            color: #444;
+            margin-bottom: 1em;
+        }
+        .info-list {
+            list-style: none;
+            padding: 0;
+            margin: 1em 0;
+            color: #333;
+            font-size: 1.1em;
+        }
+        .info-list li {
+            margin: 0.5em 0;
+            display: flex;
+            align-items: center;
+            gap: 0.5em;
+        }
+        .info-list svg {
+            width: 18px;
+            height: 18px;
+            vertical-align: middle;
+            fill: #0078d4;
+        }
+        .links {
+            margin-top: 1.5em;
+        }
+        .links a {
+            display: inline-block;
+            margin: 0 0.4em;
+            padding: 0.5em 1.2em;
+            border-radius: 6px;
+            background: #0078d4;
+            color: #fff;
+            text-decoration: none;
+            transition: background 0.2s;
+            font-weight: 500;
+            font-size: 1em;
+        }
+        .links a:hover {
+            background: #005fa3;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-container">
+        <img src="https://avatars.githubusercontent.com/u/1023360181?v=4" alt="Profile picture" class="profile-pic">
+        <h1>ThaAoon</h1>
+        <div class="username">@ThaAoon</div>
+        <div class="bio">
+            <!-- Write a short bio about yourself here -->
+            Enthusiastic developer passionate about open source, web development, and learning new technologies.
+        </div>
+        <ul class="info-list">
+            <li>
+                <!-- Location icon -->
+                <svg viewBox="0 0 20 20"><path d="M10 2A6 6 0 0 0 4 8c0 3.75 5.5 9.6 5.74 9.85a1 1 0 0 0 1.52 0C10.5 17.6 16 11.75 16 8a6 6 0 0 0-6-6zm0 8.5A2.5 2.5 0 1 1 10 5.5a2.5 2.5 0 0 1 0 5z"/></svg>
+                <span>Location: Your City, Country</span>
+            </li>
+            <li>
+                <!-- Email icon -->
+                <svg viewBox="0 0 20 20"><path d="M2 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V4zm14 0H4v.217l6 4.286 6-4.286V4zm0 2.383l-6 4.287-6-4.287V16h12V6.383z"/></svg>
+                <span>Email: youremail@example.com</span>
+            </li>
+            <li>
+                <!-- Website icon -->
+                <svg viewBox="0 0 20 20"><path d="M10 2a8 8 0 1 0 0.001 16.001A8 8 0 0 0 10 2zM4.07 6.075A6 6 0 0 1 10 4c.832 0 1.635.161 2.372.457A6.01 6.01 0 0 1 15.93 6.075C15.179 7.66 12.78 10 10 10c-2.78 0-5.179-2.34-5.93-3.925zM10 18a7.963 7.963 0 0 1-6.32-3.13c.751-1.585 3.15-3.925 6.32-3.925s5.568 2.34 6.32 3.925A7.963 7.963 0 0 1 10 18z"/></svg>
+                <span>Website: <a href="https://yourwebsite.com" target="_blank">yourwebsite.com</a></span>
+            </li>
+        </ul>
+        <div class="links">
+            <a href="https://github.com/ThaAoon" target="_blank">GitHub</a>
+            <!-- Add more links as needed -->
+        </div>
+    </div>
+</body>
+</html>
