@@ -29,13 +29,13 @@ body{
 .profile-name {
     max-width: auto;
     max-height: auto;
-    font-size: 6vw;
+    font-size: 7vw;
     text-align: center;
     color: black;
 }
 .profile-name p {
     padding: 0px 10%;
-    font-size: 3vw;
+    font-size: 2vw;
 }
 .profile-contact {
     margin-top: 20px;
