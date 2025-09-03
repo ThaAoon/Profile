@@ -19,16 +19,48 @@ body{
 }
 
 #profilepic{
-    width: 300px;
-    height: 300px;
+    width: 40vw;
+    max-width: 250px;
+    height: auto;
     border: 8px solid skyblue;
     border-radius: 50%;  
     margin-top: 80px;
 }
+
+/* Responsive adjustments for mobile */
+@media (max-width: 600px) {
+    .mainbox {
+        margin: 20px 5%;
+        padding: 10px;
+    }
+    #profilepic {
+        width: 60vw;
+        max-width: 90vw;
+        margin-top: 20px;
+    }
+    .profile-name {
+        font-size: 36px;
+    }
+    .profile-name p {
+        font-size: 18px;
+        padding: 0 5%;
+    }
+    .profile-contact {
+        font-size: 20px;
+    }
+    img {
+        width: 32px;
+        height: 32px;
+    }
+    table {
+        font-size: 18px;
+    }
+}
+/* Generate by Github */
 .profile-name {
     max-width: auto;
     max-height: auto;
-    font-size: 86px;
+    font-size: 10vw;
     text-align: center;
     color: black;
 }
