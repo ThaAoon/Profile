@@ -5,100 +5,113 @@
 }
 body{
     background-color: gainsboro;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
 }
 .mainbox{
     background-color: ccc;
     border: 5px solid rgb(135, 135, 135);
     border-radius: 20px;
-    max-width: auto;
-    max-height: auto;
-    margin: 60px 20%;
+    width: 100%;
+    height: 100%;
     text-align: center;
-    background-color: white;
+    background-color: ghostwhite;
+    /* background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Ymx1cnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60');
+    background-size: cover;
+    background-position: center; */
+    margin: 5vw;
 }
-
 #profilepic{
-    width: 40vw;
-    max-width: 250px;
-    height: auto;
-    border: 8px solid skyblue;
-    border-radius: 50%;  
-    margin-top: 80px;
+    width: 10vw;
+    height: 10vw;
+    border-radius: 50%;
+    border: 5px solid rgb(163, 225, 248) ;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
+    margin-top: 1vw;
+    margin-bottom: 0.5vw;
 }
-.profile-name {
-    max-width: auto;
-    max-height: auto;
-    font-size: 7vw;
-    text-align: center;
-    color: black;
+.discription b{
+    font-size: 2vw;
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    margin-bottom: 0.5vw;
 }
-.profile-name p {
-    padding: 0px 10%;
-    font-size: 4vw;
-    margin-top: 20px;
+.discription p{
+    font-size: 1.5vw;
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    margin-bottom: 1vw;
+    padding: 0 10px;
 }
-.profile-contact {
-    margin-top: 20px;
-    margin-bottom: 50px;
-    font-size: 3vw;
-    max-width: 100%;
-    height: auto;
-    justify-items: center;
-}
-.instagram{
-    position: static;
-    background-color: rgb(199, 231, 243);
-    width: 80%;
-    height: 10%;
-    border-radius: 25px;
-    color:  black;
-}    
-li {
-    border: 1px solid black;
-    border-radius: 25px;
-    width: 80%;
-    height: 10%;
-    margin: 10px 0px;
-    padding: 10px 0px;
-}
-ul{
-    width: 100%;
-    height: 10%;
-    justify-items: center;
-    list-style-type: none;
-    margin-top: 50px;
-}
-img {
-    width: 45px;
-    height: 45px;
-}
-a{
+.social{
     width: 100%;
     height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+    margin-bottom: 1vw;
+    border: 1pxs solid black;
+}
+ul li {
+    background-color: white;
+    width: 50vw;
+    height: 5vw;
+    list-style: none;
+    border-radius: 1vw;
+    border: 2px solid rgb(135, 135, 135);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    margin: 1vw 0;
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.1);
+}
+.socialmedia{
+    width: 45vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon{
+    width: 3vw;
+    height: 3vw;
+    margin-right: 1vw;
+}
+.icon_img{
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1vw 0;
+}
+.social_link{
+    width: 10vw;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+.social_link a{
+    width: 20vw;
+    height: auto;
+    margin-left: 2vw;
     text-decoration: none;
     color: black;
+    font-size: 1.5vw;
+    font-weight: bold;
+    position: absolute;
+    text-align: start;
 }
-table{
-    margin: 0px 10%;
-    border: 0px solid black;
-    width: 80%;
-    height: auto;
-    font-size: 3vw;
-}
-tr .icon {
-    width: 30%;
-    height: auto;
-    padding-left: 20%;
-}
-tr .link_name {
-    max-width: 70%;
-    height: auto;
-    text-align: left;
-    padding-left: 15%;
-}
-.contactlist:hover{
-    background-color: skyblue;
-    width: 85%;
-    height: 15%;
+li:hover{
+    background-color: rgb(163, 225, 248);
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    transform: scale(1.05);
+    cursor: pointer;
 }
