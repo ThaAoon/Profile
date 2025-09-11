@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>เว็บเพจตัวอย่าง Responsive</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #f7f7f7;
+      color: #222;
+    }
+    header {
+      background: #4a90e2;
+      color: #fff;
+      padding: 1.5rem 1rem;
+      text-align: center;
+    }
+    main {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 2rem;
+      padding: 2rem 1rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    .profile {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      padding: 2rem;
+      min-width: 250px;
+      text-align: center;
+    }
+    .profile img {
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+    }
+    .profile h2 {
+      margin: 0.5rem 0 1rem;
+    }
+    .info {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      padding: 2rem;
+      flex: 1;
+    }
+    @media (max-width: 700px) {
+      main {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem 0.5rem;
+      }
+      .profile, .info {
+        width: 100%;
+        min-width: unset;
+        margin: 0 auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>สวัสดีครับ! นี่คือเว็บเพจตัวอย่าง</h1>
+  </header>
+  <main>
+    <section class="profile">
+      <img src="https://avatars.githubusercontent.com/u/1028451690?v=4" alt="Profile">
+      <h2>ThaAoon</h2>
+      <p>นักพัฒนา GitHub</p>
+    </section>
+    <section class="info">
+      <h2>เกี่ยวกับเว็บเพจนี้</h2>
+      <p>
+        เว็บเพจนี้ถูกออกแบบมาให้สามารถแสดงผลได้ดีทั้งบนหน้าจอคอมพิวเตอร์และหน้าจอมือถือ ด้วยการใช้ CSS Flexbox และ Media Query เพื่อปรับ layout ตามขนาดหน้าจอของผู้ใช้งาน
+      </p>
+      <ul>
+        <li>แสดงโปรไฟล์และข้อมูล</li>
+        <li>ปรับขนาดอัตโนมัติ</li>
+        <li>ดีไซน์ทันสมัย</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
