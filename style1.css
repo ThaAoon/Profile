@@ -1,0 +1,195 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    width: 100%;
+    height: 100%;
+}
+header{
+    width: 100%;
+    height: auto;
+    background-color: blue;
+}
+section{
+    width: 100%;
+    height: auto;
+    background-color: rgba(150, 150, 150, 1.5);
+}
+footer{
+    width: 100%;
+    height: auto;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.contrainer-full{
+    width: 100%;
+    height: auto;
+    /* background-color: aqua; */
+}
+.banner-bg{
+    background-image: url(https://happywall-img-gallery.imgix.net/20607/japan_limited.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+}
+.banner-text {
+    width: 40%;
+    height: 20%;
+    background-color: rgba(86, 86, 90, 0.5);
+    border-radius: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 2px black;
+}
+.banner-text h3{
+    color: white;
+    font-size: 200%;
+    font-weight: bolder;
+    text-shadow: 0px 0px 3px white;
+}
+/* Main contrainer */
+.contrainer-full{
+    width: 100%;
+    height: auto;
+    justify-items: center;
+}
+/* Secondary contrainer */
+.contrainer-md{
+    width: 80%;
+    height: auto;
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: center;
+    padding: 5% 0;
+}
+/* Menu-list */
+.menu-list{
+    width: 100%;
+    margin: 3%;
+}
+ul{
+    width: 100%;
+}
+li{
+    width: 100%;
+    height: auto;
+    list-style: none;
+    justify-items: center;
+    border-radius: 5vh;
+    background-color: azure;
+    display: block;
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+.list-item{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    padding: 1% 0;
+}
+.social-icon{
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    padding-right: 5%;
+}
+.social-icon svg {
+    width: 30px;
+    height: 30px;
+}
+.ending{
+    color: white;
+    text-align: center;
+}
+.social-link{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    text-decoration: none;
+    color: black;
+}
+.list:hover{
+    background-color: aqua;
+}
+/* Media Query */
+/* Mobile phone */
+@media(max-width: 320px){
+    .banner-bg{
+        height: 30vh;
+    }
+    .banner-text{
+        width: 90%;
+        height: 30%;
+    }
+    .banner-text h3{
+        font-size: 120%;
+        text-align: center;
+    }
+    .contrainer-md{
+        width: 100%;
+    }
+    .social-icon svg {
+        width: 20px;
+        height: 20px;
+    }
+    .list-item{
+        width: 90%;
+        display: flex;
+    }
+    .social-icon{
+        width: 40%;
+        display: flex;
+        justify-content: end;
+        padding-right: 5%;
+    }
+    .ending{
+        font-size: 50%;
+    }
+}
+/* Tablet */
+@media(min-width: 321px) and (max-width: 780px){
+    .banner-bg{
+        height: 30vh;
+    }
+    .banner-text{
+        width: 85%;
+        height: 40%;
+    }
+    .banner-text h3{
+        font-size: 150%;
+        text-align: center;
+    }
+    .ending{
+        font-size: 55%;
+    }
+}
+/* Screen */
+@media(min-width: 781px){
+    .banner-bg{
+        height: 60vh;
+    }
+    .banner-text {
+        width: 80%;
+        height: 20%;
+    }
+    .banner-text h3{
+        font-size: 180%;
+        text-align: center;
+    }
+}
